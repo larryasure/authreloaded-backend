@@ -75,6 +75,7 @@ INSTALLED_APPS = [
 #     "https://mydaily-notes.vercel.app",
 # ]
 
+
 CORS_ALLOW_ALL_ORIGINS=True
 CORS_ALLOW_CREDENTIALS=True
 
