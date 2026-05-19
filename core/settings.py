@@ -26,7 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY")
+
+SECRET_KEY ="django-insecure-ig1$xe9ra5la$ewj8w+nde+h#c&fn(ag67n7&$m7bn2k&944hb"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -66,14 +67,21 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "api",
     "rest_framework",
-    "corsheaders"
+    "corsheaders",
 ]
 
-CORS_ALLOWED_ORIGINS= [
-    "http://localhost:5173",
-    "https://mydaily-notes.vercel.app/",
-]
+# CORS_ALLOWED_ORIGINS= [
+#     "http://localhost:5173",
+#     "https://mydaily-notes.vercel.app",
+# ]
+
+CORS_ALLOW_ALL_ORIGINS=True
 CORS_ALLOW_CREDENTIALS=True
+
+
+# CSRF_TRUSTED_ORIGINS = [
+#     "https://mydaily-notes.vercel.app"
+# ]
 
 
 # AUTH_USER_MODEL= "api.User"
