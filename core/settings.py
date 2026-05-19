@@ -70,8 +70,8 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS= [
-        "http://localhost:5173",
-    "https://your-vercel-app.vercel.app",
+    "http://localhost:5173",
+    "https://mydaily-notes.vercel.app/",
 ]
 CORS_ALLOW_CREDENTIALS=True
 
